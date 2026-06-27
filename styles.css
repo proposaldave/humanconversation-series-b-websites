@@ -1288,7 +1288,7 @@ input {
     radial-gradient(ellipse at 67% 70%, rgba(7, 6, 5, 0.62) 0%, rgba(7, 6, 5, 0.42) 18%, transparent 34%),
     linear-gradient(90deg, rgba(7, 6, 5, 0.98) 0%, rgba(7, 6, 5, 0.86) 34%, rgba(7, 6, 5, 0.22) 72%, rgba(7, 6, 5, 0.62) 100%),
     linear-gradient(180deg, rgba(7, 6, 5, 0.08), rgba(7, 6, 5, 0.88)),
-    url("assets/community-breathing-system-v3.png") center right / cover no-repeat;
+    url("assets/community-breathing-system-v4.png") center right / cover no-repeat;
 }
 
 .cinema-hero::after {
@@ -1495,7 +1495,7 @@ input {
 
 .proof-strip-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -2500,7 +2500,7 @@ input {
   background:
     linear-gradient(90deg, rgba(3, 18, 19, 0.98) 0%, rgba(3, 18, 19, 0.91) 34%, rgba(3, 18, 19, 0.34) 59%, rgba(3, 18, 19, 0.05) 100%),
     linear-gradient(180deg, rgba(3, 18, 19, 0.12), rgba(8, 10, 9, 0.82)),
-    url("assets/community-breathing-system-v3.png") center right / cover no-repeat;
+    url("assets/community-breathing-system-v4.png") center right / cover no-repeat;
 }
 
 .cinema-hero-breathing::before {
@@ -2514,18 +2514,18 @@ input {
 }
 
 .cinema-hero-breathing .cinema-copy {
-  max-width: 760px;
+  max-width: 690px;
   padding: 58px 0 68px;
 }
 
 .cinema-hero-breathing .cinema-headline {
-  max-width: 780px;
-  font-size: clamp(3.55rem, 5.15vw, 5.82rem);
+  max-width: 690px;
+  font-size: clamp(3.25rem, 4.62vw, 5.3rem);
 }
 
 .cinema-hero-breathing .cinema-headline span {
   display: block;
-  max-width: 760px;
+  max-width: 680px;
   color: #72d9c4;
 }
 
@@ -3709,7 +3709,7 @@ input {
     background:
       radial-gradient(ellipse at 70% 64%, rgba(7, 6, 5, 0.62) 0%, rgba(7, 6, 5, 0.38) 22%, transparent 42%),
       linear-gradient(180deg, rgba(7, 6, 5, 0.96) 0%, rgba(7, 6, 5, 0.74) 54%, rgba(7, 6, 5, 0.96) 100%),
-      url("assets/community-breathing-system-v3.png") center top / cover no-repeat;
+      url("assets/community-breathing-system-v4.png") center top / cover no-repeat;
   }
 
   .cinema-copy {

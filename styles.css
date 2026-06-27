@@ -1278,7 +1278,7 @@ input {
     radial-gradient(ellipse at 67% 70%, rgba(7, 6, 5, 0.62) 0%, rgba(7, 6, 5, 0.42) 18%, transparent 34%),
     linear-gradient(90deg, rgba(7, 6, 5, 0.98) 0%, rgba(7, 6, 5, 0.86) 34%, rgba(7, 6, 5, 0.22) 72%, rgba(7, 6, 5, 0.62) 100%),
     linear-gradient(180deg, rgba(7, 6, 5, 0.08), rgba(7, 6, 5, 0.88)),
-    url("assets/community-breathing-system.png") center right / cover no-repeat;
+    url("assets/community-breathing-system-v3.png") center right / cover no-repeat;
 }
 
 .cinema-hero::after {
@@ -1472,6 +1472,57 @@ input {
   background: rgba(216, 170, 89, 0.08);
 }
 
+.cinema-proof-strip {
+  position: relative;
+  z-index: 2;
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(90deg, rgba(114, 217, 196, 0.1), rgba(216, 170, 89, 0.06), rgba(217, 107, 128, 0.09)),
+    rgba(8, 11, 10, 0.94);
+}
+
+.proof-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.proof-strip-grid div {
+  min-height: 124px;
+  padding: 22px;
+  background: rgba(4, 19, 19, 0.74);
+}
+
+.proof-strip-grid span {
+  display: block;
+  margin-bottom: 18px;
+  color: #72d9c4;
+  font-size: 0.68rem;
+  font-weight: 860;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.proof-strip-grid b {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.proof-strip-grid p {
+  max-width: 310px;
+  margin: 6px 0 0;
+  color: rgba(242, 255, 250, 0.68);
+  font-size: 0.92rem;
+  line-height: 1.42;
+}
+
 .cinema-section {
   padding: 116px 0;
   background: #0d0c0b;
@@ -1578,7 +1629,7 @@ input {
   border-radius: 38px;
   background:
     linear-gradient(90deg, rgba(7, 37, 35, 0.96), rgba(7, 37, 35, 0.62) 42%, rgba(7, 37, 35, 0.1)),
-    url("assets/community-breathing-system.png") center right / cover no-repeat;
+    url("assets/community-breathing-system-v3.png") center right / cover no-repeat;
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
 }
 
@@ -2453,11 +2504,11 @@ input {
 }
 
 .cinema-hero-breathing {
-  min-height: calc(100vh - 72px);
+  min-height: calc(100vh - 140px);
   background:
     linear-gradient(90deg, rgba(3, 18, 19, 0.98) 0%, rgba(3, 18, 19, 0.91) 34%, rgba(3, 18, 19, 0.34) 59%, rgba(3, 18, 19, 0.05) 100%),
     linear-gradient(180deg, rgba(3, 18, 19, 0.12), rgba(8, 10, 9, 0.82)),
-    url("assets/community-breathing-system.png") center right / cover no-repeat;
+    url("assets/community-breathing-system-v3.png") center right / cover no-repeat;
 }
 
 .cinema-hero-breathing::before {
@@ -2472,12 +2523,12 @@ input {
 
 .cinema-hero-breathing .cinema-copy {
   max-width: 760px;
-  padding: 82px 0 94px;
+  padding: 58px 0 68px;
 }
 
 .cinema-hero-breathing .cinema-headline {
   max-width: 780px;
-  font-size: clamp(3.7rem, 5.4vw, 6.05rem);
+  font-size: clamp(3.55rem, 5.15vw, 5.82rem);
 }
 
 .cinema-hero-breathing .cinema-headline span {
@@ -2743,7 +2794,10 @@ input {
   margin-top: 18px;
 }
 
-.plan-actions button {
+.plan-actions span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 40px;
   padding: 0 14px;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -2751,10 +2805,9 @@ input {
   background: rgba(255, 255, 255, 0.92);
   color: #11100f;
   font-weight: 820;
-  cursor: default;
 }
 
-.plan-actions button + button {
+.plan-actions span + span {
   background: rgba(255, 255, 255, 0.08);
   color: rgba(255, 255, 255, 0.74);
 }
@@ -2897,7 +2950,7 @@ input {
   min-height: 720px;
   background:
     linear-gradient(90deg, rgba(3, 18, 19, 0.98), rgba(3, 18, 19, 0.7) 38%, rgba(3, 18, 19, 0.12) 100%),
-    url("assets/community-breathing-system.png") center right / cover no-repeat;
+    url("assets/community-breathing-system-v3.png") center right / cover no-repeat;
 }
 
 .graph-grid {
@@ -3776,7 +3829,7 @@ input {
     background:
       radial-gradient(ellipse at 70% 64%, rgba(7, 6, 5, 0.62) 0%, rgba(7, 6, 5, 0.38) 22%, transparent 42%),
       linear-gradient(180deg, rgba(7, 6, 5, 0.96) 0%, rgba(7, 6, 5, 0.74) 54%, rgba(7, 6, 5, 0.96) 100%),
-      url("assets/community-breathing-system.png") center top / cover no-repeat;
+      url("assets/community-breathing-system-v3.png") center top / cover no-repeat;
   }
 
   .cinema-copy {
@@ -3859,7 +3912,7 @@ input {
     padding: 28px;
     background:
       linear-gradient(180deg, rgba(7, 37, 35, 0.95), rgba(7, 37, 35, 0.58), rgba(7, 37, 35, 0.95)),
-      url("assets/community-breathing-system.png") center / cover no-repeat;
+      url("assets/community-breathing-system-v3.png") center / cover no-repeat;
   }
 
   .breathe-feature h2 {

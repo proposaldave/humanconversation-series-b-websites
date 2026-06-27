@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Human Conversation | The Human Layer for Communities</title>
     <meta name="description" content="Human Conversation turns real conversations into felt connection, a living connection graph, and community intelligence for the next right action.">
-    <link rel="stylesheet" href="styles.css?v=site-c-proof-v1">
+    <link rel="stylesheet" href="styles.css?v=review-mode-v1">
+    <script>
+      if (new URLSearchParams(window.location.search).get("review") === "1") {
+        document.documentElement.classList.add("review-mode");
+      }
+    </script>
   </head>
   <body class="cinematic-page">
     <nav class="nav cinema-nav">
@@ -22,9 +27,9 @@
       </div>
       <div class="nav-actions">
         <div class="site-switcher compact dark-switcher" aria-label="Website options">
-          <a href="platform.html">Site A</a>
-          <a href="human-layer.html">Site B</a>
-          <a class="active" href="cinematic.html">Site C</a>
+          <a href="platform.html?review=1">Site A</a>
+          <a href="human-layer.html?review=1">Site B</a>
+          <a class="active" href="cinematic.html?review=1">Site C</a>
         </div>
         <a class="btn" href="mailto:hello@humanconversation.com">Start a conversation</a>
       </div>

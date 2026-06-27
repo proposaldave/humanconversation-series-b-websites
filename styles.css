@@ -175,6 +175,16 @@ input {
   padding: 4px;
 }
 
+.platform-page .site-switcher.compact,
+.human-page .site-switcher.compact,
+.cinematic-page .site-switcher.compact {
+  display: none;
+}
+
+.review-mode .site-switcher.compact {
+  display: inline-flex;
+}
+
 .site-switcher.compact a {
   min-height: 34px;
   padding: 0 12px;

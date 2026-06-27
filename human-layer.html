@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Human Conversation | The Human Layer for Communities</title>
     <meta name="description" content="Human conversation is where people feel known and where communities learn what to do next.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=review-mode-v1">
+    <script>
+      if (new URLSearchParams(window.location.search).get("review") === "1") {
+        document.documentElement.classList.add("review-mode");
+      }
+    </script>
   </head>
   <body class="human-page">
     <nav class="nav glass">
@@ -21,9 +26,9 @@
       </div>
       <div class="nav-actions">
         <div class="site-switcher compact" aria-label="Website options">
-          <a href="platform.html">Site A</a>
-          <a class="active" href="human-layer.html">Site B</a>
-          <a href="cinematic.html">Site C</a>
+          <a href="platform.html?review=1">Site A</a>
+          <a class="active" href="human-layer.html?review=1">Site B</a>
+          <a href="cinematic.html?review=1">Site C</a>
         </div>
         <a class="btn primary" href="mailto:hello@humanconversation.com">Talk to us</a>
       </div>

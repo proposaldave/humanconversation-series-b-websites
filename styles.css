@@ -2552,6 +2552,10 @@ input {
   padding: 16px;
 }
 
+.product-section .os-panel .ui-section-label {
+  color: rgba(216, 170, 89, 0.72);
+}
+
 .product-section .os-person {
   margin-top: 10px;
   padding: 13px;

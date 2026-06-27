@@ -1923,6 +1923,131 @@ input {
   margin: 10px 0 0;
 }
 
+.compound-system {
+  display: grid;
+  grid-template-columns: 0.88fr 1.12fr;
+  gap: 24px;
+  align-items: stretch;
+  margin-top: 76px;
+  scroll-margin-top: 92px;
+}
+
+.compound-cards {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.compound-cards article {
+  padding: 18px;
+  border: 1px solid rgba(216, 170, 89, 0.18);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.compound-cards b,
+.compound-cards span {
+  display: block;
+}
+
+.compound-cards b {
+  color: #fff;
+  font-size: 1.05rem;
+}
+
+.compound-cards span {
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.46;
+}
+
+.pattern-console {
+  overflow: hidden;
+  border: 1px solid rgba(114, 217, 196, 0.2);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(114, 217, 196, 0.12), transparent 28%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.035)),
+    #0a1414;
+  box-shadow: 0 34px 100px rgba(0, 0, 0, 0.34);
+}
+
+.pattern-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pattern-top b,
+.pattern-top span {
+  display: block;
+}
+
+.pattern-top b {
+  color: #fff;
+}
+
+.pattern-top span {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 0.88rem;
+}
+
+.pattern-top em {
+  padding: 8px 11px;
+  border-radius: 999px;
+  background: rgba(114, 217, 196, 0.14);
+  color: #72d9c4;
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 820;
+}
+
+.pattern-row {
+  display: grid;
+  grid-template-columns: 0.58fr 1fr 1.25fr 0.75fr;
+  gap: 14px;
+  align-items: center;
+  padding: 18px 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.pattern-row:last-child {
+  border-bottom: 0;
+}
+
+.pattern-row.active {
+  background: rgba(114, 217, 196, 0.1);
+}
+
+.pattern-row span {
+  color: #d8aa59;
+  font-size: 0.72rem;
+  font-weight: 840;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.pattern-row strong {
+  color: #fff;
+}
+
+.pattern-row p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.pattern-row b {
+  justify-self: end;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.76rem;
+}
+
 .grid-5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

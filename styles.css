@@ -2126,6 +2126,115 @@ input {
   line-height: 1.45;
 }
 
+.final-start {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 84% 8%, rgba(114, 217, 196, 0.16), transparent 28%),
+    rgba(2, 14, 15, 0.7);
+  box-shadow: 0 22px 58px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(18px);
+}
+
+.final-start-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.final-start-top .mini-label {
+  margin-bottom: 8px;
+  color: #d8aa59;
+}
+
+.final-start-top b {
+  display: block;
+  max-width: 300px;
+  color: #fff;
+  font-size: 1.28rem;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.final-start-top em {
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  border: 1px solid rgba(114, 217, 196, 0.24);
+  border-radius: 999px;
+  background: rgba(114, 217, 196, 0.12);
+  color: #a5f1dd;
+  font-size: 0.72rem;
+  font-style: normal;
+  font-weight: 840;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.launch-steps {
+  display: grid;
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.launch-steps div {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 12px 14px;
+  padding: 18px 20px;
+  background: rgba(3, 16, 17, 0.86);
+}
+
+.launch-steps span {
+  grid-row: span 2;
+  color: #72d9c4;
+  font-size: 0.76rem;
+  font-weight: 880;
+  letter-spacing: 0.12em;
+}
+
+.launch-steps b,
+.launch-steps p {
+  display: block;
+}
+
+.launch-steps b {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.launch-steps p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.64);
+  line-height: 1.42;
+}
+
+.launch-email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 58px;
+  padding: 0 20px;
+  color: #fff;
+  font-weight: 840;
+  text-decoration: none;
+  background: rgba(216, 170, 89, 0.11);
+}
+
+.launch-email::after {
+  content: "Start";
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #fff;
+  color: #061414;
+  font-size: 0.78rem;
+}
+
 .measurement-section {
   background:
     radial-gradient(circle at 72% 14%, rgba(114, 217, 196, 0.13), transparent 30%),
@@ -3483,6 +3592,7 @@ input {
   .workflow-console,
   .trust-console,
   .final-frame,
+  .final-start,
   .final-proof {
     max-width: calc(100vw - 30px);
   }
@@ -3517,6 +3627,17 @@ input {
   .final-frame {
     min-height: auto;
     padding: 28px;
+  }
+
+  .final-start-top {
+    flex-direction: column;
+  }
+
+  .launch-email {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 20px;
   }
 
   .final-copy .section-title {

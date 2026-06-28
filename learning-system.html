@@ -287,26 +287,45 @@
       <section class="learning-section graph-section" id="graph">
         <div class="wrap graph-grid-light">
           <div class="graph-visual" aria-label="Connection graph visualization">
-            <div class="node core">Felt connection</div>
-            <div class="node n1">Host</div>
-            <div class="node n2">Room</div>
-            <div class="node n3">Peer</div>
-            <div class="node n4">Invitation</div>
-            <div class="node n5">Follow-up</div>
-            <svg viewBox="0 0 620 430" aria-hidden="true">
-              <path d="M310 210 C230 130 160 118 98 96" />
-              <path d="M310 210 C420 120 500 110 548 92" />
-              <path d="M310 210 C210 240 145 282 82 330" />
-              <path d="M310 210 C430 248 500 278 552 326" />
-              <path d="M310 210 C300 296 300 348 306 390" />
-            </svg>
+            <div class="graph-shell-top">
+              <span>Conversation signal</span>
+              <b>Connection graph</b>
+            </div>
+            <div class="graph-canvas">
+              <svg viewBox="0 0 660 430" aria-hidden="true">
+                <defs>
+                  <linearGradient id="graphRose" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#d45d72" stop-opacity="0.9" />
+                    <stop offset="100%" stop-color="#b8954a" stop-opacity="0.7" />
+                  </linearGradient>
+                </defs>
+                <path class="graph-line primary" d="M330 215 C250 118 160 105 94 84" />
+                <path class="graph-line primary" d="M330 215 C436 105 520 112 584 90" />
+                <path class="graph-line" d="M330 215 C214 214 128 260 72 344" />
+                <path class="graph-line" d="M330 215 C450 230 525 286 594 356" />
+                <path class="graph-line" d="M330 215 C326 150 328 104 330 70" />
+                <path class="graph-line faint" d="M94 84 C250 44 412 48 584 90" />
+                <path class="graph-line faint" d="M72 344 C232 412 430 420 594 356" />
+              </svg>
+              <div class="graph-core">
+                <span>Felt connection</span>
+                <b>Primary signal</b>
+              </div>
+              <div class="graph-node n1"><span>Who</span><b>Person</b></div>
+              <div class="graph-node n2"><span>With whom</span><b>Peer</b></div>
+              <div class="graph-node n3"><span>Where</span><b>Room</b></div>
+              <div class="graph-node n4"><span>When</span><b>Moment</b></div>
+              <div class="graph-node n5"><span>Next</span><b>Invitation</b></div>
+              <div class="graph-chip chip-a"><span>Works here</span><b>Trusted host before first visit</b></div>
+              <div class="graph-chip chip-b"><span>Improves across communities</span><b>Similar moments learn faster</b></div>
+            </div>
           </div>
           <div>
             <p class="kicker">The connection graph</p>
-            <h2>Real conversations create the living map.</h2>
+            <h2>Real conversations create the connection graph.</h2>
             <p>
-              Every trusted conversation adds context: who creates connection, where it happens,
-              what makes it repeat, and what next moment would help.
+              Human Conversation turns what people say and feel into the graph of when, where,
+              and with whom real connection happens.
             </p>
             <div class="graph-notes">
               <div><b>Person context</b><span>Who feels known and what helps them return.</span></div>
@@ -434,33 +453,39 @@
       <section class="learning-section trust-light" id="trust">
         <div class="wrap trust-light-grid">
           <div>
-            <p class="kicker">Human-to-human layer</p>
-            <h2>The system recommends. A human confirms.</h2>
+            <p class="kicker">Trust model</p>
+            <h2>Approved context, human control, clear boundaries.</h2>
             <p>
-              Human Conversation is built for sensitive context. It gives the right person the
-              right prompt, then keeps the next move human.
+              Human Conversation is built for real human context. It helps teams turn
+              the right context into the next action while keeping approval, access, and learning explicit.
             </p>
           </div>
-          <div class="trust-matrix" aria-label="Trust controls">
-            <div class="matrix-row head">
-              <span>Control</span>
-              <span>How it works</span>
-              <span>Status</span>
+          <div class="trust-console" aria-label="Trust model controls">
+            <div class="trust-console-top">
+              <span>Human confirmed</span>
+              <b>Nothing important moves without a person approving it.</b>
             </div>
-            <div class="matrix-row">
-              <b>Role visibility</b>
-              <span>Teams only see context needed for the next human action.</span>
-              <em>Controlled</em>
-            </div>
-            <div class="matrix-row">
-              <b>Approval history</b>
-              <span>Every saved signal and recommendation carries human confirmation.</span>
-              <em>Auditable</em>
-            </div>
-            <div class="matrix-row">
-              <b>Private detail</b>
-              <span>Raw personal context is excluded while useful patterns improve.</span>
-              <em>Protected</em>
+            <div class="trust-control-grid">
+              <article>
+                <span>Access</span>
+                <b>Right context, right role.</b>
+                <p>Teams see only what helps them make the next human moment better.</p>
+              </article>
+              <article>
+                <span>Context</span>
+                <b>Allowed signal, not raw detail.</b>
+                <p>Connection, fit, preference, and next action stay structured for the team.</p>
+              </article>
+              <article>
+                <span>Action</span>
+                <b>Recommend, then confirm.</b>
+                <p>The system suggests the next move; a human approves, adjusts, or skips it.</p>
+              </article>
+              <article>
+                <span>Learning</span>
+                <b>Patterns improve carefully.</b>
+                <p>Outcome learning strengthens future recommendations without exposing personal detail.</p>
+              </article>
             </div>
           </div>
         </div>

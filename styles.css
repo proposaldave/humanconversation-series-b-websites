@@ -4355,22 +4355,62 @@ input {
   background: #f8efe4;
 }
 
-.integration-map {
+.integration-console {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-columns: 0.9fr 1.12fr 0.9fr;
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid rgba(17, 16, 15, 0.09);
+  border-radius: 32px;
+  background: rgba(17, 16, 15, 0.08);
+  box-shadow: 0 24px 70px rgba(52, 38, 24, 0.1);
 }
 
-.integration-map div {
-  min-height: 118px;
+.integration-column,
+.integration-core {
+  min-height: 386px;
   display: grid;
-  place-items: center;
-  border: 1px solid rgba(17, 16, 15, 0.09);
-  border-radius: 22px;
+  align-content: start;
+  gap: 10px;
+  padding: 24px;
   background: #fff;
-  color: rgba(17, 16, 15, 0.74);
-  font-weight: 840;
-  box-shadow: 0 14px 34px rgba(52, 38, 24, 0.06);
+}
+
+.integration-core {
+  background:
+    radial-gradient(circle at 50% 16%, rgba(212, 93, 114, 0.18), transparent 26%),
+    #171412;
+}
+
+.integration-column span,
+.integration-core span {
+  display: block;
+  margin-bottom: 36px;
+  color: var(--rose);
+  font-size: 0.72rem;
+  font-weight: 860;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.integration-column b,
+.integration-core b {
+  display: block;
+  padding: 14px 15px;
+  border-radius: 16px;
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+.integration-column b {
+  border: 1px solid rgba(17, 16, 15, 0.08);
+  background: #fbf7f0;
+}
+
+.integration-core b {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
 }
 
 .launch-section {

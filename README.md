@@ -6,8 +6,8 @@ Four complete future website options for HumanConversation.com investor vision r
 - `platform.html` is Site A: Community Intelligence Platform.
 - `human-layer.html` is Site B: The Human Layer for Communities.
 - `cinematic.html` is Site C: Cinematic Connection Intelligence.
-- `learning-system.html` is Site D: Community Learning System, the current recommended company-homepage direction.
-- `breathing-system.html` is Site E: Living Connection System, the darker modern visual swing.
+- `learning-system.html` is Site D: Community Learning System, the strongest product-detail direction.
+- `breathing-system.html` is Site E: Living Connection System, the current recommended public-website direction.
 
 This repo is intentionally separate from:
 

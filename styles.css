@@ -178,7 +178,8 @@ input {
 .platform-page .site-switcher.compact,
 .human-page .site-switcher.compact,
 .cinematic-page .site-switcher.compact,
-.learning-page .site-switcher.compact {
+.learning-page .site-switcher.compact,
+.breathing-page .site-switcher.compact {
   display: none;
 }
 
@@ -6865,6 +6866,57 @@ input {
   color: rgba(255, 250, 244, 0.7);
   font-size: 1.1rem;
   line-height: 1.58;
+}
+
+.breathing-transform {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  max-width: 690px;
+  margin-top: 24px;
+}
+
+.breathing-transform span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 8px 11px;
+  border: 1px solid rgba(255, 250, 244, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 250, 244, 0.08);
+  color: rgba(255, 250, 244, 0.7);
+  font-size: 0.82rem;
+  font-weight: 820;
+}
+
+.breathing-transform span:first-child {
+  color: rgba(255, 250, 244, 0.42);
+}
+
+.breathing-transform span:last-child {
+  border-color: rgba(126, 229, 206, 0.34);
+  background: rgba(126, 229, 206, 0.12);
+  color: #7ee5ce;
+}
+
+.breathing-transform i {
+  position: relative;
+  width: 20px;
+  height: 1px;
+  background: rgba(126, 229, 206, 0.38);
+}
+
+.breathing-transform i::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid rgba(126, 229, 206, 0.62);
+  border-right: 1px solid rgba(126, 229, 206, 0.62);
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .breathing-hero .hero-actions {

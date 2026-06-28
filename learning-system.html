@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Human Conversation | The Human Conversation Layer</title>
     <meta name="description" content="Human Conversation is the human conversation layer for recurring communities: real conversations become the connection graph teams use to create more connection and know what to do next.">
-    <link rel="stylesheet" href="styles.css?v=series-b-polish-v6">
+    <link rel="stylesheet" href="styles.css?v=series-b-polish-v7">
     <script>
       if (new URLSearchParams(window.location.search).get("review") === "1") {
         document.documentElement.classList.add("review-mode");
@@ -73,68 +73,40 @@
               fetchpriority="high"
               decoding="async"
             >
-            <div class="learning-app hero-app" aria-label="Human Conversation product dashboard">
+            <div class="learning-app hero-app simple-product-app" aria-label="Human Conversation product dashboard">
               <div class="app-topbar">
                 <div>
-                  <b>Conversation intelligence system</b>
-                  <span>Next person, context, action, outcome</span>
+                  <b>Conversation queue</b>
+                  <span>Who. Ask. Next.</span>
                 </div>
                 <em>Human approved</em>
               </div>
-              <div class="app-metadata">
-                <div><span>Source</span><b>Return risk + felt connection</b></div>
-                <div><span>Owner</span><b>Community lead</b></div>
-                <div><span>Due</span><b>Before next moment</b></div>
+              <div class="simple-product-stage" aria-label="Conversation to action flow">
+                <article class="simple-step">
+                  <span>Who</span>
+                  <b>New returner</b>
+                </article>
+                <i class="simple-arrow" aria-hidden="true"></i>
+                <article class="simple-step primary">
+                  <span>Ask</span>
+                  <b>Who helped you belong?</b>
+                </article>
+                <i class="simple-arrow" aria-hidden="true"></i>
+                <article class="simple-step">
+                  <span>Next</span>
+                  <b>Invite trusted peer</b>
+                </article>
               </div>
-              <div class="app-body">
-                <aside class="app-rail">
-                  <p>Who needs a conversation</p>
-                  <div class="rail-item active">
-                    <b>Returner flagged</b>
-                    <span>First visit, no familiar connection yet</span>
-                  </div>
-                  <div class="rail-item">
-                    <b>Regular drifting</b>
-                    <span>Three visits, no lasting attachment</span>
-                  </div>
-                  <div class="rail-item">
-                    <b>Connector ready</b>
-                    <span>Creates warmer rooms for others</span>
-                  </div>
-                </aside>
-                <section class="app-main">
-                  <div class="person-context">
-                    <p>Conversation guide</p>
-                    <h3>Learn where the person felt known.</h3>
-                    <div class="prompt-box">
-                      <span>Ask</span>
-                      <b>Who made walking in feel easiest?</b>
-                    </div>
-                    <div class="context-grid">
-                      <div><span>Listen for</span><b>Known person</b></div>
-                      <div><span>Connection source</span><b>Room, host, peer</b></div>
-                      <div><span>Do not store</span><b>Private raw detail</b></div>
-                      <div><span>Measure after</span><b>Felt connected</b></div>
-                    </div>
-                  </div>
-                </section>
-                <aside class="app-action">
-                  <p>Recommended action</p>
-                  <h3>Invite with a trusted peer to a better-fit room.</h3>
-                  <div class="action-reason">
-                    <span>Why this action</span>
-                    <b>People returned more often when the next moment felt warmer and easier.</b>
-                  </div>
-                  <div class="approval-row">
-                    <span>Approve</span>
-                    <span>Adjust</span>
-                    <span>Skip</span>
-                  </div>
-                  <div class="action-outcome">
-                    <div><span>Outcome to capture</span><b>Did the next room feel easier?</b></div>
-                    <div><span>Learning applied</span><b>Improve similar welcome moments</b></div>
-                  </div>
-                </aside>
+              <div class="simple-approval">
+                <div class="simple-graph" aria-hidden="true">
+                  <span></span>
+                  <i></i>
+                  <span></span>
+                  <i></i>
+                  <span></span>
+                </div>
+                <b>Graph updated</b>
+                <em>Approve</em>
               </div>
             </div>
           </div>

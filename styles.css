@@ -4036,9 +4036,12 @@ input {
 }
 
 .moment-console-top span,
+.moment-meta span,
+.moment-search span,
 .moment-list span,
 .moment-prompt span,
-.moment-fields span {
+.moment-fields span,
+.moment-status-row span {
   display: block;
   color: var(--rose);
   font-size: 0.72rem;
@@ -4052,6 +4055,22 @@ input {
   margin-top: 5px;
   font-size: 1.28rem;
   line-height: 1.16;
+}
+
+.moment-meta {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px 16px;
+  min-width: 206px;
+  padding: 12px 14px;
+  border: 1px solid rgba(17, 16, 15, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.moment-meta b {
+  font-size: 0.88rem;
+  line-height: 1.12;
 }
 
 .moment-console-top em {
@@ -4080,7 +4099,26 @@ input {
   background: #fbf3ea;
 }
 
+.moment-search {
+  display: grid;
+  gap: 8px;
+  padding: 15px;
+  border: 1px solid rgba(17, 16, 15, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.moment-search b {
+  color: rgba(17, 16, 15, 0.62);
+  font-size: 0.88rem;
+  line-height: 1.2;
+}
+
 .moment-list article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px 8px;
+  align-items: center;
   padding: 15px;
   border: 1px solid transparent;
   border-radius: 18px;
@@ -4098,6 +4136,31 @@ input {
   margin-top: 8px;
   font-size: 1rem;
   line-height: 1.18;
+}
+
+.moment-list article span,
+.moment-list article b {
+  grid-column: 1;
+}
+
+.moment-list article em {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  padding: 6px 8px;
+  border-radius: 999px;
+  background: rgba(17, 16, 15, 0.06);
+  color: rgba(17, 16, 15, 0.58);
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.moment-list article.active em {
+  background: rgba(212, 93, 114, 0.12);
+  color: #a3374d;
 }
 
 .moment-workflow {
@@ -4145,6 +4208,28 @@ input {
   margin-top: 18px;
   font-size: 1.08rem;
   line-height: 1.24;
+}
+
+.moment-status-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.moment-status-row div {
+  min-height: 102px;
+  padding: 16px;
+  border: 1px solid rgba(17, 16, 15, 0.08);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.moment-status-row b {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.98rem;
+  line-height: 1.18;
 }
 
 .measurement-light {
@@ -5528,6 +5613,7 @@ input {
   .workflow-outcome-strip,
   .moment-console-body,
   .moment-fields,
+  .moment-status-row,
   .integration-console,
   .measurement-main,
   .metric-cards,
@@ -5569,6 +5655,16 @@ input {
   .intelligence-top {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .moment-console-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .moment-meta {
+    width: 100%;
+    min-width: 0;
   }
 
   .moment-list {

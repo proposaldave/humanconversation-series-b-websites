@@ -4119,6 +4119,152 @@ input {
   align-items: center;
 }
 
+.moment-system {
+  position: relative;
+  overflow: hidden;
+  min-height: 720px;
+  border: 1px solid rgba(17, 16, 15, 0.09);
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 50% 32%, rgba(212, 93, 114, 0.14), transparent 28%),
+    radial-gradient(circle at 84% 14%, rgba(184, 149, 74, 0.11), transparent 24%),
+    #fffaf4;
+  box-shadow: 0 24px 70px rgba(52, 38, 24, 0.1);
+}
+
+.moment-system::before,
+.moment-system::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  width: 72%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 93, 114, 0.34), transparent);
+  transform: translate(-50%, -50%);
+}
+
+.moment-system::after {
+  width: 1px;
+  height: 58%;
+  background: linear-gradient(180deg, transparent, rgba(212, 93, 114, 0.28), transparent);
+}
+
+.moment-system-core {
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  z-index: 2;
+  display: grid;
+  align-content: center;
+  width: 270px;
+  min-height: 270px;
+  padding: 28px;
+  border: 1px solid rgba(212, 93, 114, 0.18);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(212, 93, 114, 0.14), transparent 34%),
+    rgba(255, 255, 255, 0.9);
+  box-shadow: 0 28px 74px rgba(52, 38, 24, 0.12);
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.moment-system-core span,
+.moment-system-grid small,
+.moment-system-strip span {
+  display: block;
+  color: var(--rose);
+  font-size: 0.72rem;
+  font-weight: 860;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.moment-system-core b {
+  display: block;
+  margin-top: 12px;
+  font-size: 1.5rem;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.moment-system-core p {
+  margin: 12px 0 0;
+  color: rgba(17, 16, 15, 0.6);
+  font-size: 0.92rem;
+  line-height: 1.38;
+}
+
+.moment-system-grid {
+  position: absolute;
+  inset: 32px;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 96px 240px;
+}
+
+.moment-system-grid article {
+  min-height: 136px;
+  padding: 20px;
+  border: 1px solid rgba(17, 16, 15, 0.09);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 44px rgba(52, 38, 24, 0.08);
+}
+
+.moment-system-grid article.active {
+  border-color: rgba(212, 93, 114, 0.24);
+  background: rgba(255, 246, 248, 0.92);
+}
+
+.moment-system-grid b {
+  display: block;
+  margin-top: 22px;
+  font-size: 1.18rem;
+  line-height: 1.1;
+}
+
+.moment-system-grid p {
+  margin: 8px 0 0;
+  color: rgba(17, 16, 15, 0.58);
+  font-size: 0.92rem;
+  line-height: 1.36;
+}
+
+.moment-system-strip {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(17, 16, 15, 0.08);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 18px 48px rgba(52, 38, 24, 0.08);
+}
+
+.moment-system-strip div {
+  min-height: 94px;
+  padding: 16px 18px;
+  border-right: 1px solid rgba(17, 16, 15, 0.08);
+}
+
+.moment-system-strip div:last-child {
+  border-right: 0;
+}
+
+.moment-system-strip b {
+  display: block;
+  margin-top: 16px;
+  font-size: 0.98rem;
+  line-height: 1.14;
+}
+
 .moment-library-console {
   overflow: hidden;
   border: 1px solid rgba(17, 16, 15, 0.09);
@@ -5774,6 +5920,7 @@ input {
   .measurement-light-grid,
   .graph-grid-light,
   .intelligence-grid,
+  .moment-library-grid,
   .trust-light-grid,
   .integration-grid,
   .company-grid,
@@ -5849,6 +5996,44 @@ input {
     margin-top: -28px;
   }
 
+  .moment-system {
+    display: grid;
+    gap: 14px;
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .moment-system::before,
+  .moment-system::after {
+    display: none;
+  }
+
+  .moment-system-core,
+  .moment-system-grid,
+  .moment-system-strip {
+    position: relative;
+    inset: auto;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: auto;
+    transform: none;
+  }
+
+  .moment-system-core {
+    min-height: auto;
+    border-radius: 28px;
+  }
+
+  .moment-system-grid {
+    gap: 10px;
+  }
+
+  .moment-system-strip {
+    border-radius: 20px;
+  }
+
   .app-topbar,
   .workflow-board,
   .moment-library-console,
@@ -5870,6 +6055,8 @@ input {
   .moment-console-body,
   .moment-fields,
   .moment-status-row,
+  .moment-system-grid,
+  .moment-system-strip,
   .integration-console,
   .integration-map,
   .integration-status,
@@ -5895,6 +6082,7 @@ input {
   .app-action,
   .moment-list,
   .moment-workflow,
+  .moment-system,
   .integration-column,
   .integration-core {
     min-width: 0;
@@ -5903,6 +6091,8 @@ input {
   .workflow-board article,
   .workflow-detail-row section,
   .workflow-outcome-strip div,
+  .moment-system-grid article,
+  .moment-system-strip div,
   .app-metadata div,
   .action-outcome div,
   .future-system-row div,

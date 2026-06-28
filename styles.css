@@ -5195,4 +5195,173 @@ input {
   .cinema-final {
     padding: 34px 24px;
   }
+
+  .learning-page .nav-actions {
+    display: flex;
+  }
+
+  .learning-page .nav-actions .btn {
+    min-height: 38px;
+    padding: 0 12px;
+    font-size: 0.82rem;
+  }
+
+  .learning-hero {
+    min-height: auto;
+    padding: 56px 0 0;
+  }
+
+  .learning-hero-grid,
+  .problem-grid,
+  .measurement-light-grid,
+  .graph-grid-light,
+  .trust-light-grid,
+  .integration-grid,
+  .company-grid,
+  .use-case-grid,
+  .outcomes-grid-light,
+  .launch-grid,
+  .human-future-grid,
+  .learning-close-box {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: calc(100vw - 30px);
+  }
+
+  .learning-page .headline,
+  .learning-section h2,
+  .learning-close h2 {
+    width: 100%;
+    max-width: calc(100vw - 30px);
+    overflow-wrap: break-word;
+  }
+
+  .learning-page .headline {
+    font-size: clamp(3.1rem, 18vw, 4.8rem);
+  }
+
+  .learning-page .subhead {
+    max-width: calc(100vw - 30px);
+  }
+
+  .learning-page .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero-visual-stack {
+    min-width: 0;
+  }
+
+  .hero-system-art {
+    height: 240px;
+    border-radius: 28px 28px 0 0;
+  }
+
+  .learning-app {
+    width: 100%;
+    max-width: calc(100vw - 30px);
+  }
+
+  .hero-app {
+    margin-top: -28px;
+  }
+
+  .app-topbar,
+  .workflow-board,
+  .moment-library-console,
+  .measurement-console-light,
+  .intelligence-console,
+  .integration-console,
+  .future-panel,
+  .launch-board {
+    border-radius: 24px;
+  }
+
+  .app-body,
+  .workflow-board,
+  .moment-console-body,
+  .moment-fields,
+  .integration-console,
+  .measurement-main,
+  .metric-cards,
+  .trust-light .trust-control-grid,
+  .intelligence-flow,
+  .outcome-list-light,
+  .launch-board,
+  .future-pillars,
+  .close-actions,
+  .learning-footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-rail,
+  .app-main,
+  .app-action,
+  .moment-list,
+  .moment-workflow,
+  .integration-column,
+  .integration-core {
+    min-width: 0;
+  }
+
+  .workflow-board article,
+  .integration-column,
+  .integration-core {
+    min-height: auto;
+  }
+
+  .moment-list {
+    border-right: 0;
+    border-bottom: 1px solid rgba(17, 16, 15, 0.08);
+  }
+
+  .app-action h3,
+  .person-context h3 {
+    font-size: 1.85rem;
+  }
+
+  .proof-grid-4,
+  .comparison-panel,
+  .moment-grid,
+  .use-case-list {
+    grid-template-columns: 1fr;
+  }
+
+  .graph-visual {
+    min-height: 520px;
+  }
+
+  .graph-canvas {
+    min-height: 448px;
+  }
+
+  .graph-core {
+    width: 142px;
+    height: 142px;
+  }
+
+  .graph-node {
+    min-width: 96px;
+    padding: 10px 12px;
+  }
+
+  .graph-chip {
+    max-width: 160px;
+    padding: 12px;
+  }
+
+  .graph-chip.chip-a {
+    left: 12px;
+    bottom: 16px;
+  }
+
+  .graph-chip.chip-b {
+    right: 12px;
+    bottom: 16px;
+  }
+
+  .human-future-section {
+    min-height: auto;
+  }
 }

@@ -3817,12 +3817,168 @@ input {
 }
 
 .workflow-board {
+  overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
+  border: 1px solid rgba(17, 16, 15, 0.09);
+  border-radius: 32px;
+  background: #fff;
+  box-shadow: 0 28px 76px rgba(52, 38, 24, 0.1);
 }
 
-.workflow-board article,
+.workflow-board-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  align-items: center;
+  padding: 24px 26px;
+  border-bottom: 1px solid rgba(17, 16, 15, 0.08);
+  background:
+    radial-gradient(circle at 88% 14%, rgba(212, 93, 114, 0.12), transparent 26%),
+    #fffaf4;
+}
+
+.workflow-board-top span,
+.workflow-stage span,
+.workflow-detail-row span,
+.workflow-outcome-strip span {
+  display: block;
+  color: var(--rose);
+  font-size: 0.72rem;
+  font-weight: 860;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.workflow-board-top b {
+  display: block;
+  margin-top: 7px;
+  font-size: 1.42rem;
+  letter-spacing: -0.035em;
+}
+
+.workflow-board-top em {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(212, 93, 114, 0.12);
+  color: #a3374d;
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 860;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.workflow-stage {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(17, 16, 15, 0.08);
+}
+
+.workflow-stage article {
+  min-height: 166px;
+  padding: 20px;
+  background: #fff;
+}
+
+.workflow-stage article.active {
+  background:
+    radial-gradient(circle at 76% 18%, rgba(212, 93, 114, 0.2), transparent 32%),
+    #171412;
+  color: #fff;
+}
+
+.workflow-stage article.active span,
+.workflow-stage article.active p {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.workflow-stage b {
+  display: block;
+  margin-top: 42px;
+  font-size: 1.18rem;
+  line-height: 1.08;
+}
+
+.workflow-stage p {
+  margin: 9px 0 0;
+  color: rgba(17, 16, 15, 0.6);
+  font-size: 0.94rem;
+  line-height: 1.36;
+}
+
+.workflow-detail-row {
+  display: grid;
+  grid-template-columns: 1.16fr 0.92fr 0.92fr;
+  gap: 1px;
+  background: rgba(17, 16, 15, 0.08);
+}
+
+.workflow-detail-row section {
+  min-height: 250px;
+  padding: 24px;
+  background:
+    linear-gradient(90deg, rgba(17, 16, 15, 0.034) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(17, 16, 15, 0.034) 1px, transparent 1px),
+    #fffaf4;
+  background-size: 30px 30px;
+}
+
+.workflow-detail-row h3 {
+  margin: 32px 0 0;
+  font-size: clamp(1.75rem, 3vw, 3rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.workflow-detail-row p {
+  margin: 14px 0 0;
+  color: rgba(17, 16, 15, 0.62);
+  line-height: 1.46;
+}
+
+.workflow-context-stack {
+  display: grid;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.workflow-context-stack b {
+  display: block;
+  padding: 14px 15px;
+  border: 1px solid rgba(17, 16, 15, 0.08);
+  border-radius: 16px;
+  background: #fff;
+  font-size: 1rem;
+}
+
+.workflow-next {
+  background:
+    radial-gradient(circle at 86% 16%, rgba(212, 93, 114, 0.13), transparent 28%),
+    #fff !important;
+}
+
+.workflow-outcome-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(17, 16, 15, 0.08);
+}
+
+.workflow-outcome-strip div {
+  min-height: 102px;
+  padding: 18px 20px;
+  background: #fff;
+}
+
+.workflow-outcome-strip b {
+  display: block;
+  margin-top: 18px;
+  font-size: 1rem;
+  line-height: 1.16;
+}
+
 .use-case-list article,
 .graph-notes div {
   min-height: 236px;
@@ -3833,22 +3989,12 @@ input {
   box-shadow: 0 18px 48px rgba(52, 38, 24, 0.07);
 }
 
-.workflow-board span {
-  display: block;
-  margin-bottom: 56px;
-  color: var(--rose);
-  font-size: 0.78rem;
-  font-weight: 860;
-}
-
-.workflow-board b,
 .use-case-list b,
 .graph-notes b {
   display: block;
   font-size: 1.24rem;
 }
 
-.workflow-board p,
 .use-case-list span,
 .graph-notes span {
   display: block;
@@ -5280,6 +5426,9 @@ input {
 
   .app-body,
   .workflow-board,
+  .workflow-stage,
+  .workflow-detail-row,
+  .workflow-outcome-strip,
   .moment-console-body,
   .moment-fields,
   .integration-console,
@@ -5306,9 +5455,16 @@ input {
   }
 
   .workflow-board article,
+  .workflow-detail-row section,
+  .workflow-outcome-strip div,
   .integration-column,
   .integration-core {
     min-height: auto;
+  }
+
+  .workflow-board-top {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .moment-list {

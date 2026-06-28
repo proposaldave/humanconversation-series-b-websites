@@ -1,11 +1,12 @@
 # Human Conversation Series-B Website Directions
 
-Three complete future website options for HumanConversation.com investor vision review.
+Four complete future website options for HumanConversation.com investor vision review.
 
 - `index.html` is the review hub.
 - `platform.html` is Site A: Community Intelligence Platform.
 - `human-layer.html` is Site B: The Human Layer for Communities.
 - `cinematic.html` is Site C: Cinematic Connection Intelligence.
+- `learning-system.html` is Site D: Community Learning System, the current recommended company-homepage direction.
 
 This repo is intentionally separate from:
 

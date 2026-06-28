@@ -1,6 +1,6 @@
 # Human Conversation Series-B Website Directions
 
-Five complete future website options for HumanConversation.com investor vision review.
+Six complete future website options for HumanConversation.com investor vision review.
 
 - `index.html` is the clean public Site E recommendation.
 - `review.html` is the private review hub with all options.
@@ -9,6 +9,7 @@ Five complete future website options for HumanConversation.com investor vision r
 - `cinematic.html` is Site C: Cinematic Connection Intelligence.
 - `learning-system.html` is Site D: Community Learning System, the strongest product-detail direction.
 - `breathing-system.html` is Site E: Living Connection System, the current recommended public-website direction.
+- `product-system.html` is Site F: Product System, the cleanest product-led alternative.
 
 This repo is intentionally separate from:
 

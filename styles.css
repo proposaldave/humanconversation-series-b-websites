@@ -4253,7 +4253,35 @@ input {
 }
 
 .use-case-list article {
-  min-height: 174px;
+  position: relative;
+  min-height: 214px;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(212, 93, 114, 0.1), transparent 26%),
+    #fff;
+}
+
+.use-case-list small {
+  display: inline-flex;
+  min-width: 34px;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 42px;
+  border-radius: 999px;
+  background: rgba(212, 93, 114, 0.11);
+  color: var(--rose);
+  font-size: 0.72rem;
+  font-weight: 860;
+  letter-spacing: 0.06em;
+}
+
+.use-case-list b {
+  max-width: 270px;
+  line-height: 1.18;
+}
+
+.use-case-list span {
+  max-width: 310px;
 }
 
 .outcomes-section {

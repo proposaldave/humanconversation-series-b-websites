@@ -1,8 +1,9 @@
 # Human Conversation Series-B Website Directions
 
-Four complete future website options for HumanConversation.com investor vision review.
+Five complete future website options for HumanConversation.com investor vision review.
 
-- `index.html` is the review hub.
+- `index.html` is the clean public Site E recommendation.
+- `review.html` is the private review hub with all options.
 - `platform.html` is Site A: Community Intelligence Platform.
 - `human-layer.html` is Site B: The Human Layer for Communities.
 - `cinematic.html` is Site C: Cinematic Connection Intelligence.

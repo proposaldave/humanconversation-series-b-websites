@@ -5041,7 +5041,7 @@ input {
 .human-future-section {
   background:
     radial-gradient(circle at 16% 18%, rgba(212, 93, 114, 0.12), transparent 26%),
-    radial-gradient(circle at 86% 20%, rgba(73, 180, 160, 0.09), transparent 28%),
+    radial-gradient(circle at 86% 20%, rgba(184, 149, 74, 0.1), transparent 28%),
     #fbf7f0;
   color: var(--ink);
 }
@@ -5084,6 +5084,7 @@ input {
 }
 
 .future-panel-main span,
+.future-system-row span,
 .future-pillars span {
   display: block;
   color: var(--rose);
@@ -5108,6 +5109,31 @@ input {
   color: rgba(17, 16, 15, 0.62);
   font-size: 1.03rem;
   line-height: 1.54;
+}
+
+.future-system-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(17, 16, 15, 0.08);
+  border-bottom: 1px solid rgba(17, 16, 15, 0.08);
+}
+
+.future-system-row div {
+  min-height: 124px;
+  padding: 20px;
+  background:
+    radial-gradient(circle at 50% 12%, rgba(212, 93, 114, 0.08), transparent 34%),
+    #fffaf4;
+}
+
+.future-system-row b {
+  display: block;
+  margin-top: 20px;
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.16;
+  letter-spacing: -0.025em;
 }
 
 .future-pillars {
@@ -5662,6 +5688,10 @@ input {
     overflow-wrap: break-word;
   }
 
+  .learning-section {
+    scroll-margin-top: 110px;
+  }
+
   .learning-page .headline {
     font-size: clamp(3.1rem, 18vw, 4.8rem);
   }
@@ -5725,6 +5755,7 @@ input {
   .launch-board,
   .launch-timeline,
   .launch-operating-row,
+  .future-system-row,
   .future-pillars,
   .close-actions,
   .learning-footer .footer-grid {
@@ -5744,6 +5775,7 @@ input {
   .workflow-board article,
   .workflow-detail-row section,
   .workflow-outcome-strip div,
+  .future-system-row div,
   .integration-column,
   .integration-core {
     min-height: auto;

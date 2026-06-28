@@ -7792,3 +7792,110 @@ input {
     grid-template-columns: 1fr;
   }
 }
+
+.breathing-page .breathing-layer,
+.breathing-page .breathing-trust {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(217, 183, 103, 0.1), transparent 24%),
+    radial-gradient(circle at 82% 64%, rgba(126, 229, 206, 0.12), transparent 26%),
+    #fbf7f0;
+}
+
+.breathing-page .breathing-layer::before,
+.breathing-page .breathing-trust::before {
+  content: "";
+  position: absolute;
+  inset: 16% -12% auto 40%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(126, 229, 206, 0.24), rgba(183, 68, 88, 0.18), transparent);
+  transform: rotate(-13deg);
+}
+
+.breathing-page .breathing-three,
+.breathing-page .trust-boundary {
+  position: relative;
+  isolation: isolate;
+}
+
+.breathing-page .breathing-three::before,
+.breathing-page .trust-boundary::before {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 24%;
+  z-index: -1;
+  height: 1px;
+  opacity: 0.34;
+  background: linear-gradient(90deg, transparent, rgba(183, 68, 88, 0.24), rgba(126, 229, 206, 0.24), transparent);
+}
+
+.breathing-page .breathing-three article,
+.breathing-page .trust-boundary article {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(17, 16, 15, 0.1);
+  background:
+    radial-gradient(circle at 82% 18%, rgba(126, 229, 206, 0.12), transparent 24%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(255, 250, 244, 0.66));
+  box-shadow:
+    0 28px 70px rgba(34, 28, 18, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.breathing-page .breathing-three article::before,
+.breathing-page .trust-boundary article::before {
+  content: "";
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #b74458;
+  box-shadow:
+    0 0 0 9px rgba(183, 68, 88, 0.07),
+    0 0 30px rgba(183, 68, 88, 0.2);
+}
+
+.breathing-page .breathing-three article:nth-child(2)::before,
+.breathing-page .trust-boundary article:nth-child(2)::before {
+  background: #7ee5ce;
+  box-shadow:
+    0 0 0 9px rgba(126, 229, 206, 0.08),
+    0 0 30px rgba(126, 229, 206, 0.24);
+}
+
+.breathing-page .breathing-three article:nth-child(3)::before,
+.breathing-page .trust-boundary article:nth-child(3)::before {
+  background: #d9b767;
+  box-shadow:
+    0 0 0 9px rgba(217, 183, 103, 0.08),
+    0 0 30px rgba(217, 183, 103, 0.24);
+}
+
+.breathing-page .breathing-three article::after,
+.breathing-page .trust-boundary article::after {
+  content: "";
+  position: absolute;
+  right: -58px;
+  bottom: -58px;
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(126, 229, 206, 0.14);
+  border-radius: 50%;
+}
+
+.breathing-page .breathing-three b {
+  position: relative;
+  display: block;
+  margin-top: 70px;
+  font-size: 1.44rem;
+}
+
+.breathing-page .breathing-three p {
+  position: relative;
+  margin-top: 18px;
+}

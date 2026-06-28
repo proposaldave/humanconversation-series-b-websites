@@ -4378,14 +4378,97 @@ input {
   line-height: 1.48;
 }
 
-.company-section {
-  background: #171412;
-  color: #fff;
+.human-future-section {
+  background:
+    radial-gradient(circle at 16% 18%, rgba(212, 93, 114, 0.12), transparent 26%),
+    radial-gradient(circle at 86% 20%, rgba(73, 180, 160, 0.09), transparent 28%),
+    #fbf7f0;
+  color: var(--ink);
 }
 
-.company-section p,
-.company-section .kicker {
-  color: rgba(255, 255, 255, 0.66);
+.human-future-grid {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 52px;
+  align-items: center;
+}
+
+.human-future-copy p,
+.human-future-copy .kicker {
+  color: rgba(17, 16, 15, 0.64);
+}
+
+.human-future-copy h2 {
+  max-width: 760px;
+}
+
+.future-panel {
+  overflow: hidden;
+  border: 1px solid rgba(17, 16, 15, 0.09);
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 76% 12%, rgba(212, 93, 114, 0.14), transparent 28%),
+    #fff;
+  box-shadow: 0 28px 76px rgba(52, 38, 24, 0.1);
+}
+
+.future-panel-main {
+  min-height: 270px;
+  display: grid;
+  align-content: end;
+  padding: 32px;
+  border-bottom: 1px solid rgba(17, 16, 15, 0.08);
+  background:
+    radial-gradient(circle at 52% 30%, rgba(212, 93, 114, 0.14), transparent 20%),
+    radial-gradient(circle at 52% 30%, rgba(17, 16, 15, 0.045), transparent 36%);
+}
+
+.future-panel-main span,
+.future-pillars span {
+  display: block;
+  color: var(--rose);
+  font-size: 0.72rem;
+  font-weight: 860;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.future-panel-main b {
+  display: block;
+  margin-top: 12px;
+  color: var(--ink);
+  font-size: clamp(2rem, 4vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.future-panel-main p {
+  max-width: 480px;
+  margin: 16px 0 0;
+  color: rgba(17, 16, 15, 0.62);
+  font-size: 1.03rem;
+  line-height: 1.54;
+}
+
+.future-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(17, 16, 15, 0.08);
+}
+
+.future-pillars article {
+  min-height: 184px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.future-pillars b {
+  display: block;
+  margin-top: 36px;
+  color: var(--ink);
+  font-size: 1.08rem;
+  line-height: 1.28;
 }
 
 .learning-close {
@@ -4402,6 +4485,11 @@ input {
   border-radius: 32px;
   background: #fff;
   box-shadow: var(--shadow-soft);
+}
+
+.learning-close-box p:not(.kicker) {
+  max-width: 620px;
+  margin-bottom: 0;
 }
 
 .close-actions {

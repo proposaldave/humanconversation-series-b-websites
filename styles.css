@@ -4062,20 +4062,31 @@ input {
 }
 
 .investor-graph-section {
-  background: #061916;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 74% 28%, rgba(126, 229, 206, 0.1), transparent 28%),
+    #061916;
   color: #fffaf4;
 }
 
 .investor-graph-grid {
   display: grid;
-  grid-template-columns: minmax(380px, 0.86fr) minmax(520px, 1.14fr);
-  gap: 60px;
+  grid-template-columns: minmax(360px, 0.75fr) minmax(560px, 1.25fr);
+  gap: 72px;
   align-items: center;
 }
 
 .investor-graph-section .kicker,
-.investor-graph-section .investor-compound-card span {
+.investor-graph-section .investor-compound-card span,
+.map-node span,
+.map-outcomes span {
   color: #7ee5ce;
+}
+
+.investor-graph-copy h2 {
+  max-width: 680px;
+  font-size: clamp(3.3rem, 5.3vw, 6rem);
+  line-height: 0.94;
 }
 
 .investor-graph-section p {
@@ -4083,6 +4094,136 @@ input {
   color: rgba(255, 250, 244, 0.68);
   font-size: 1.13rem;
   line-height: 1.58;
+}
+
+.connection-map-card {
+  padding: 22px;
+  border: 1px solid rgba(126, 229, 206, 0.16);
+  border-radius: 34px;
+  background:
+    linear-gradient(145deg, rgba(255, 250, 244, 0.1), rgba(255, 250, 244, 0.035));
+  box-shadow: 0 36px 100px rgba(0, 0, 0, 0.24);
+}
+
+.connection-map {
+  position: relative;
+  min-height: 390px;
+  overflow: hidden;
+  border: 1px solid rgba(126, 229, 206, 0.12);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(126, 229, 206, 0.16), transparent 22%),
+    radial-gradient(circle at 34% 28%, rgba(212, 93, 114, 0.1), transparent 20%),
+    rgba(5, 21, 18, 0.78);
+}
+
+.connection-map::before,
+.connection-map::after {
+  content: "";
+  position: absolute;
+  inset: 64px 92px;
+  border: 1px solid rgba(126, 229, 206, 0.16);
+  border-radius: 50%;
+}
+
+.connection-map::after {
+  inset: 92px 58px;
+  border-color: rgba(196, 145, 58, 0.16);
+  transform: rotate(-18deg);
+}
+
+.map-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  background: #fffaf4;
+  color: #061916;
+  font-size: 1.1rem;
+  font-weight: 850;
+  line-height: 1.02;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.28);
+}
+
+.map-node {
+  position: absolute;
+  z-index: 3;
+  min-width: 132px;
+  padding: 16px;
+  border: 1px solid rgba(126, 229, 206, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 250, 244, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.map-node span,
+.map-outcomes span {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 860;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.map-node b {
+  display: block;
+  margin-top: 8px;
+  color: #fffaf4;
+  font-size: 1.15rem;
+  letter-spacing: 0;
+}
+
+.node-person {
+  left: 8%;
+  top: 14%;
+}
+
+.node-moment {
+  right: 8%;
+  top: 16%;
+}
+
+.node-peer {
+  left: 11%;
+  bottom: 14%;
+}
+
+.node-next {
+  right: 10%;
+  bottom: 13%;
+}
+
+.map-outcomes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  overflow: hidden;
+  margin-top: 14px;
+  border: 1px solid rgba(126, 229, 206, 0.12);
+  border-radius: 22px;
+  background: rgba(255, 250, 244, 0.1);
+}
+
+.map-outcomes div {
+  min-height: 118px;
+  padding: 18px;
+  background: rgba(255, 250, 244, 0.055);
+}
+
+.map-outcomes b {
+  display: block;
+  margin-top: 22px;
+  color: #fffaf4;
+  font-size: 1.22rem;
+  line-height: 1.04;
+  letter-spacing: 0;
 }
 
 .investor-compound-card {

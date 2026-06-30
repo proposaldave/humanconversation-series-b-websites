@@ -3,6 +3,7 @@
 Main review site for the future HumanConversation.com product website.
 
 - `index.html` is the current complete redo recommendation: a simple Series B-style product site for the human conversation layer.
+- `flow-proposal.html` is a sendable visual proposal for Flow / Adam Neumann.
 - `review.html` is the private review hub with all options.
 - `platform.html` is Site A: Community Intelligence Platform.
 - `human-layer.html` is Site B: The Human Layer for Communities.

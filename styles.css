@@ -4149,6 +4149,11 @@ input {
   align-items: center;
 }
 
+.investor-graph-copy,
+.connection-map-card {
+  min-width: 0;
+}
+
 .investor-graph-section .kicker,
 .investor-graph-section .investor-compound-card span,
 .map-node span,
@@ -4427,6 +4432,21 @@ input {
     right: 50%;
     bottom: 0;
     transform: translateX(50%) rotate(135deg);
+  }
+}
+
+@media (max-width: 1360px) {
+  .investor-graph-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .investor-graph-copy h2,
+  .investor-graph-section p {
+    max-width: 760px;
+  }
+
+  .connection-map-card {
+    max-width: 860px;
   }
 }
 
@@ -9720,6 +9740,11 @@ input {
   color: #fffaf4;
 }
 
+.hc-graph-copy,
+.hc-graph-visual {
+  min-width: 0;
+}
+
 .hc-graph-section .hc-kicker {
   border-color: rgba(255, 250, 244, 0.14);
   background: rgba(255, 250, 244, 0.08);
@@ -9974,6 +9999,21 @@ input {
   .hc-section h2,
   .hc-close h2 {
     font-size: 4.7rem;
+  }
+}
+
+@media (max-width: 1360px) {
+  .hc-graph-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hc-graph-copy h2,
+  .hc-graph-copy p {
+    max-width: 780px;
+  }
+
+  .hc-graph-visual {
+    max-width: 860px;
   }
 }
 

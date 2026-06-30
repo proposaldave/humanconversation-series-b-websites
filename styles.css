@@ -3951,6 +3951,11 @@ input {
   align-items: center;
 }
 
+.investor-copy,
+.investor-product-card {
+  min-width: 0;
+}
+
 .investor-copy {
   max-width: 600px;
 }
@@ -4378,6 +4383,169 @@ input {
 
 .investor-close .btn {
   margin-top: 28px;
+}
+
+@media (max-width: 1180px) {
+  .investor-hero-grid,
+  .investor-graph-grid,
+  .investor-trust-box {
+    grid-template-columns: 1fr;
+  }
+
+  .investor-hero {
+    padding: 86px 0 72px;
+  }
+
+  .investor-copy,
+  .investor-copy h1,
+  .investor-copy p:not(.kicker) {
+    max-width: 760px;
+  }
+
+  .investor-product-card .simple-product-app {
+    max-width: 900px;
+  }
+
+  .investor-built-grid,
+  .investor-trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-chain {
+    grid-template-columns: 1fr;
+  }
+
+  .category-chain i {
+    width: 2px;
+    height: 28px;
+    justify-self: center;
+    background: linear-gradient(180deg, rgba(212, 93, 114, 0.18), rgba(212, 93, 114, 0.54));
+  }
+
+  .category-chain i::after {
+    top: auto;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%) rotate(135deg);
+  }
+}
+
+@media (max-width: 760px) {
+  .learning-page.investor-page .nav-actions {
+    display: none;
+  }
+
+  .investor-hero {
+    padding: 70px 0 54px;
+  }
+
+  .investor-hero-grid {
+    max-width: calc(100vw - 30px);
+    overflow: hidden;
+  }
+
+  .investor-copy h1 {
+    max-width: calc(100vw - 30px);
+    font-size: clamp(3rem, 15vw, 4.45rem);
+    line-height: 0.96;
+    overflow-wrap: break-word;
+  }
+
+  .investor-copy p:not(.kicker) {
+    max-width: calc(100vw - 30px);
+    font-size: 1rem;
+  }
+
+  .investor-product-card .simple-product-app {
+    width: 100%;
+  }
+
+  .investor-product-card .simple-product-stage {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .investor-product-card .simple-arrow {
+    width: 2px;
+    height: 24px;
+    justify-self: center;
+    background: linear-gradient(180deg, rgba(184, 149, 74, 0.18), rgba(212, 93, 114, 0.72));
+  }
+
+  .investor-product-card .simple-arrow::after {
+    top: auto;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%) rotate(135deg);
+  }
+
+  .investor-product-card .simple-step,
+  .investor-product-card .simple-step.primary {
+    min-height: 148px;
+    padding: 18px;
+  }
+
+  .investor-product-card .simple-step b,
+  .investor-product-card .simple-step.primary b {
+    max-width: 12ch;
+    font-size: 1.55rem;
+  }
+
+  .investor-section {
+    padding: 72px 0;
+  }
+
+  .investor-section h2,
+  .investor-close h2,
+  .investor-graph-copy h2 {
+    font-size: clamp(2.65rem, 13vw, 4.15rem);
+    line-height: 0.98;
+  }
+
+  .connection-map-card,
+  .investor-trust-box,
+  .investor-close-box {
+    padding: 20px;
+    border-radius: 26px;
+  }
+
+  .connection-map {
+    min-height: 430px;
+  }
+
+  .map-center {
+    width: 126px;
+    height: 126px;
+  }
+
+  .map-node {
+    min-width: 112px;
+    padding: 13px;
+  }
+
+  .node-person {
+    left: 5%;
+    top: 9%;
+  }
+
+  .node-moment {
+    right: 5%;
+    top: 10%;
+  }
+
+  .node-peer {
+    left: 6%;
+    bottom: 10%;
+  }
+
+  .node-next {
+    right: 6%;
+    bottom: 9%;
+  }
+
+  .map-outcomes {
+    grid-template-columns: 1fr;
+  }
 }
 
 .learning-proof {
